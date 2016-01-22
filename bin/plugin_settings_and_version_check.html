@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE>Plugin Settings and Version Check Applet</TITLE>
+<font size="20"><font color="DarkRed"><center> Checking Plugin and Browser Version</center></font></font>
+<hr>
+<BODY>
+<body bgcolor="Skyblue"> </body>
+    <font color="Red"> Plugin Settings Up to Date?:  </font>
+
+	<script>
+	document.write("Your Java plugin is enabled: " + navigator.javaEnabled() + ". <br> <br>");
+	
+	</script>
+
+<font color="Red"> Plugin Version Up to Date?: </font>
+
+<!-- Statement "Your Java plugin is up to date." is shown for the Notepad application only if the version of JRE software on the client is greater than or equal to 1.6. If not, the browser is redirected to https://www.java.com/en/download/. -->
+
+	<script src="https://www.java.com/js/deployJava.js"></script>
+	<script>
+    	if (deployJava.versionCheck('1.6+')) {
+        	document.write("Your Java plugin is up to date.");
+    	} else {
+        	document.write("Copy and paste the following link in to your browser and go update your java: " + "https://www.java.com/en/download");
+            
+    	}
+	</script>
+
+<hr>
+<APPLET CODE= "DanAndMitch.class" WIDTH=150 HEIGHT=25>
+    <script>
+document.write("If applet is blocked, then go to System preferences, click Java, and click security, in security add the html link to the exception list <br> <br>")  
+document.write("Still not working? Try one of the following browsers:" )
+<img style="float: right; margin: 0px 0px 15px 15px;" src="Fir.jpg", src="Saf.jpg", src="IntE.jpg" width="100" />  
+</script>
+</BODY>
+</HTML>
