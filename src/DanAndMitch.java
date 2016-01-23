@@ -18,11 +18,11 @@ import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-public class DanAndMitch extends Applet {
+public class DanAndMitch extends JApplet {
 	
 	
 	
-	public static void main(String[] args) {
+	public void init(){
 		Double watts = 0.0 ; //defining the numeber of watts in the beginning
 		Double elec = 0.0; //the cost depending on the country you live in
 		Double bCost = 0.0; //if the number of years of ownership is 5 or more years the battery cost increases
