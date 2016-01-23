@@ -135,36 +135,18 @@ public class DanAndMitch extends JApplet {
 		} 
 		double a1 = ((watts/1000) * hours * elec); 
 		double b = (bCost); 
-		String a = "" + a1;
+		String a = "Electricity cost per day is " + a1;
 		double a2 = (bCost+purchase+(((((365*battery)*(watts/1000))*hours)*elec))) ; 
-		String b1 = "" +a2;
-		String b3 = "" +b;
-		JFrame frame = new JFrame("COSTS");
-	    frame.setVisible(true);
-	    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		String b1 = "The total cost of the computer for "+ battery +" years is " + a2;
+		String b3 = "The cost of the battery is " +b;
+		
 
 
-	    Panel p = new Panel();
-	    p.setLayout(new GridLayout(0, 1, 100, 100));
+		JOptionPane.showMessageDialog(null, a);
+	    JOptionPane.showMessageDialog(null, b3);
+	    JOptionPane.showMessageDialog(null, b1);
+	    
 
-	    Button button = new Button("Electricity cost per day is");
-	    final JLabel label = new JLabel(Long.toString(Long.MAX_VALUE));
-	    label.setText(a);
-	    Button button1 = new Button("The total cost of the computer for "+ battery +" years is ");
-	    final JLabel label2 = new JLabel(Long.toString(Long.MAX_VALUE));
-	    label2.setText(b1);
-	    Button button2 = new Button("The cost of the battery is");
-	    final JLabel label3 = new JLabel(Long.toString(Long.MAX_VALUE));
-	    label3.setText(b3);
-
-	    p.add(button);
-	    p.add(label);
-	    p.add(button1);
-	    p.add(label2);
-	    p.add(button2);
-	    p.add(label3);
-	    frame.add(p, BorderLayout.NORTH);
-	    frame.pack();
 	}
 	 public void stop() {}
      public void destroy() {}
