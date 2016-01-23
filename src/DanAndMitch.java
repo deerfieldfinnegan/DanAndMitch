@@ -4,7 +4,6 @@ import javax.swing.JOptionPane;
 import java.applet.Applet; 
 import java.awt.Graphics;
 import java.awt.*;
-import java.awt.*; 
 import java.awt.event.*;
 import java.awt.geom.Line2D;
 import javax.swing.JApplet;
